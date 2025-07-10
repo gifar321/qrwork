@@ -1,0 +1,237 @@
+/* styles.css */
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #007bff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 12px 15px;
+    width: 70%;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#output {
+    margin-top: 30px;
+}
+
+#generated-canvas, #product-canvas {
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Fitur Section */
+#features {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.features-list {
+    display: flex; /* Membuat elemen sejajar secara horizontal */
+    justify-content: space-between; /* Menyebarkan elemen dengan jarak yang merata */
+    gap: 20px; /* Memberikan jarak antar elemen */
+    flex-wrap: wrap; /* Membuat elemen melipat jika layar sempit */
+    margin-top: 20px;
+}
+
+.feature-item {
+    max-width: 300px;
+    flex: 1; /* Membuat tiap item mengambil ruang yang sama */
+    box-sizing: border-box;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #555;
+}
+
+
+/* Testimoni Section */
+#testimonials {
+    background-color: #f4f7fa;
+    padding: 40px 20px;
+}
+
+#testimonials h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+    color: #555;
+    font-style: italic;
+}
+
+.testimonial-item strong {
+    color: #333;
+}
+
+/* Donasi Section */
+#donate {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+#donate h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#donate button {
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#donate button:hover {
+    background-color: #218838;
+}

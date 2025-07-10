@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode & QR Code Generator</title>
+    <link rel="stylesheet" href="PP.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode/dist/JsBarcode.all.min.js"></script>
+    
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#generate">Generate Online</a></li>
+            <li><a href="#download">Download</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Barcode & QR Code Generator</h1>
+        <p>Hasilkan QR Codes and Barcodes dengan mudah.</p>
+    </section>
+
+    <!-- Fitur Unggulan Section -->
+    <section id="features">
+        <h2>Fitur Unggulan</h2>
+        <div class="features-list">
+            <div class="feature-item">
+                <h3>Generate QR Code & Barcode</h3>
+                <p>Dengan aplikasi ini, Anda dapat membuat QR Code dan Barcode dalam hitungan detik.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Download Aplikasi</h3>
+                <p>Unduh aplikasi desktop atau mobile untuk membuat QR Code dan Barcode secara offline.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Otomatis & Manual</h3>
+                <p>Pilih antara metode otomatis atau manual untuk menghasilkan QR Code atau Barcode sesuai kebutuhan Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Generate Online Section -->
+    <section id="generate">
+        <h2>Generate QR Code & Barcode</h2>
+
+        <!-- Dropdown untuk pilih tipe -->
+        <label for="type">Pilih Tipe:</label>
+        <select id="type">
+            <option value="qrcode">QR Code</option>
+            <option value="barcode">Barcode</option>
+        </select>
+
+        <!-- Tombol untuk generate otomatis -->
+        <button onclick="generateAuto()">Generate otomatis</button>
+
+        <!-- Form untuk input manual -->
+        <label for="input-data"></label>
+        <input type="text" id="input-data" placeholder="Masukan text ata data" />
+
+        <div class="button-group">
+            <button onclick="generateCode()">Generate Manual</button>
+            <button onclick="printCode()">Print</button>
+        </div>
+
+        <div id="output">
+            <canvas id="generated-canvas"></canvas>
+        </div>
+    </section>
+
+    <!-- Testimoni Section -->
+    <section id="testimonials">
+        <h2>Apa Kata Pengguna?</h2>
+        <div class="testimonials">
+            <div class="testimonial-item">
+                <p>"Aplikasi ini sangat membantu saya untuk membuat barcode dan QR code dengan cepat. Sangat user-friendly!"</p>
+                <p><strong>- Anton, Pengusaha</strong></p>
+            </div>
+            <div class="testimonial-item">
+                <p>"Saya sering menggunakan QR Code untuk bisnis saya, dan aplikasi ini sangat mempermudah prosesnya!"</p>
+                <p><strong>- Diana, Marketer</strong></p>
+            </div>
+            <div class="testimonial-item">
+                <p>"Fitur print yang disediakan sangat praktis! Saya bisa langsung mencetak barcode QR dari halaman ini!"</p>
+                <p><strong>- Budi, Developer</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download">
+        <h2>Unduh Aplikasi Kami</h2>
+        <p>Unduh aplikasi desktop atau seluler untuk pembuatan kode batang dan kode QR secara offline.</p>
+        <button onclick="downloadApp()">Download Aplikasi</button>
+    </section>
+
+    <!-- Donasi Section -->
+    <section id="donate">
+        <h2>Support Us</h2>
+        <p>Jika Anda merasa aplikasi ini bermanfaat, dukung kami untuk pengembangan lebih lanjut melalui donasi di Saweria.</p>
+        <button onclick="window.location.href='https://saweria.co/username'">Dukung Kami di Saweria</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Barcode & QR Code Generator. All rights reserved.</p>
+    </footer>
+
+    <script src="PPP.js"></script>
+</body>
+</html>
